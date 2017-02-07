@@ -57,7 +57,7 @@ begin
   Result := RetVar;
 end;
 
-function IEEE754DToF(const AData: DWORD): Single;
+function IEEE754DToF(const AData: DWORD): Single;             //iEEE 754 convert FlaotValue  / 32bit
 var
   S, M, E: Integer;
 begin
@@ -72,7 +72,7 @@ begin
 end;
 
 
-function IEEE75464DToF(const AData: UInt64): Double;  //iEEE 754 轉成浮點數 / 64位元
+function IEEE75464DToF(const AData: UInt64): Double;   //iEEE 754 convert FlaotValue  / 64 bit
 var
   S, M, E: UInt64;
 begin
